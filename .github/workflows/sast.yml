@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Central Security Workflow
-        uses: https://github.com/ckalpakoglu/decsecops-workflows/security.yaml@main
+        uses: ckalpakoglu/decsecops-workflows/security.yaml@main
         secrets:
           KONDUKTO_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
