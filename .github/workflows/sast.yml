@@ -1,4 +1,4 @@
-name: Central DevSecops Workflow Ex1
+name: Central DevSecops Workflow Ex
 on: [push]
 
 jobs:
