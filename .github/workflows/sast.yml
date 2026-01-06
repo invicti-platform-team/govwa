@@ -1,11 +1,7 @@
-name: Central DevSecops Workflow Ex
 on: [push]
 
 jobs:
   security:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Central Security Workflow
-        uses: ckalpakoglu/decsecops-workflows/security.yaml@main
-        secrets:
-          KONDUKTO_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
+    uses: ckalpakoglu/decsecops-workflows/.github/workflows/security.yaml@main
+    secrets:
+      KONDUKTO_TOKEN: ${{ secrets.KONDUKTO_TOKEN }}
